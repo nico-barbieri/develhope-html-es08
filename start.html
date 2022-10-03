@@ -40,13 +40,13 @@
 			</optgroup>
 		</select>
 		<label for="form-pro">Piano PRO</label>
-		<input id="form-pro" name="pro" type="checkbox" required/>
+		<input id="form-pro" name="pro" type="checkbox"/>
 	</div>
 	<div>
 		<label for="form-cc">Numero Carta</label>
-		<input id="form-cc" name="cc" type="text" required/>
+		<input id="form-cc" name="cc" type="text" minlength="16" maxlength="16" placeholder="0000000000000000" pattern="[0-9]+" title="Inserisci solo numeri" required/>
 		<label for="form-cvc">CVC</label>
-		<input id="form-cvc" name="cvc" type="text" required/>
+		<input id="form-cvc" name="cvc" type="text" minlength="3" maxlength="3" placeholder="123" pattern="[0-9]+" title="Inserisci solo numeri" required/>
 		<label for="form-exp">Scadenza</label>
 		<input id="form-exp" name="exp" type="date" required/>
 		<label for="form-address">Indirizzo di fatturazione</label>

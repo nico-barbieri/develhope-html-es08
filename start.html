@@ -44,9 +44,9 @@
 	</div>
 	<div>
 		<label for="form-cc">Numero Carta</label>
-		<input id="form-cc" name="cc" type="text" minlength="16" maxlength="16" placeholder="0000000000000000" onkeypress="return event.key>=0 && event.key<=9" required/>
+		<input id="form-cc" name="cc" type="text" minlength="16" maxlength="16" placeholder="0000000000000000" pattern="[0-9]+" title="Puoi inserire solo numeri." required/>
 		<label for="form-cvc">CVC</label>
-		<input id="form-cvc" name="cvc" type="text" minlength="3" maxlength="3" placeholder="123" onkeypress="return event.key>=0 && event.key<=9" required/>
+		<input id="form-cvc" name="cvc" type="text" minlength="3" maxlength="3" placeholder="123" pattern="[0-9]+" title="Puoi inserire solo numeri." required/>
 		<label for="form-exp">Scadenza</label>
 		<input id="form-exp" name="exp" type="date" required/>
 		<label for="form-address">Indirizzo di fatturazione</label>

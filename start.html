@@ -44,9 +44,9 @@
 	</div>
 	<div>
 		<label for="form-cc">Numero Carta</label>
-		<input id="form-cc" name="cc" type="text" minlength="16" maxlength="16" placeholder="0000000000000000" pattern="[0-9]+" title="Puoi inserire solo numeri." required/>
+		<input id="form-cc" name="cc" type="text" placeholder="0000000000000000" pattern="[0-9]{13}|[0-9]{16}" title="Puoi inserire solo codici di 13 o 16 cifre" required/>
 		<label for="form-cvc">CVC</label>
-		<input id="form-cvc" name="cvc" type="text" minlength="3" maxlength="3" placeholder="123" pattern="[0-9]+" title="Puoi inserire solo numeri." required/>
+		<input id="form-cvc" name="cvc" type="text" placeholder="123" pattern="[0-9]{3,4}" title="Puoi inserire solo codici di 3 o 4 cifre." required/>
 		<label for="form-exp">Scadenza</label>
 		<input id="form-exp" name="exp" type="date" required/>
 		<label for="form-address">Indirizzo di fatturazione</label>
